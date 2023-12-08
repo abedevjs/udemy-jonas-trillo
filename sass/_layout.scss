@@ -1,0 +1,65 @@
+.container {
+    max-width: 120rem; //means if viewport is less than 120rem/1200px than it still occupied 100% width
+    background-color: var(--color-Grey-light-2);
+    margin: 8rem auto;
+    box-shadow: var(--shadow-dark);
+    
+    min-height: 50rem;
+}
+
+.header {
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--line);
+    font-size: 1.4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-Grey-dark-1);
+    flex: 0 0 18%;//it occupies 18% of his container which is 'content'
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view {
+    flex-grow: 1; //it automatically calculates and occupies the rest of the space. 100% - 18% = 82%. it can also be written; flex: 1;
+    
+}
+
+.detail {
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    background-color: --color-Grey-light-1;
+    border-bottom: var(--line);
+
+    display: flex;
+}
+
+.description {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    margin-right: 1.5rem;
+    padding: 3rem;
+    
+
+    flex: 0 0 60%;
+    
+}
+
+.user-reviews {
+    flex: 1; // to occupy the rest of the space which is 40%
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
